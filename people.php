@@ -1,0 +1,6 @@
+<?phpinclude "functions.php";//Check if user is legitimately logged insession_start();if (!isset($_SESSION["valid_user"])){	// User not logged in, redirect to login page	header("Location: index.html");	exit();}echo "<table align='center' border='0' bgcolor='white'>        <tr><td colspan='5' align='center' ><h2>Card Holders</h2></td></tr>		<tr><td colspan='5'><hr></td></tr>
+		<tr>		<th>Surname</th>
+		<th>Firstname</th>
+		<th>Facility Code</th>		<th>Card Number</th>		<th></th>
+		</tr>		<tr><td colspan='5'><hr></td></tr>"; iConnect();$data = mysql_query("select id, firstname, surname, faccode, cardno from pdm_cards order by surname") or die(mysql_error());while($info = mysql_fetch_array($data)) { 	$id=$info['id'];	$faccode=$info['faccode'];	$cardno=$info['cardno'];	$firstname=$info['firstname'];	$surname=$info['surname'];		echo "<tr align='left'>";	echo "<td width='16%'>$surname</td>";	echo "<td width='16%'>$firstname</td>";	echo "<td width='16%'>$faccode</td>";	echo "<td width='16%'>$cardno</td>";	echo "<td width='16%' align='right' ><form><input type='button' value='Edit'";	?>onClick="javascript:popup('editpeople.php?id=<?php echo "$id" ?> ','Edit',400,300)"></form></td><?php	echo "</tr>";}
+echo "</table>"; ?>
