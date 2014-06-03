@@ -38,8 +38,8 @@ $(document).ready(function() {
 	
 });
 </script>
-</head>
 <title>PiDoorMan Access Control</title>
+</head>
 <body OnLoad="document.form.user_name.focus();"><font face="arial">
 <br /><br /><br /><br /><br /><table width="300" border="2" align="center" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC">
 <tr>
@@ -47,7 +47,7 @@ $(document).ready(function() {
 <td>
 <table width="100%" border="0" cellpadding="3" cellspacing="1" bgcolor="#FFFFFF">
 <tr>
-<td colspan="3" align="center" ><img src="./images/pidoorman.png" alt="PiDoorMan" title="PiDoorMan"  /></td>
+<td colspan="3" align="center" ><a href="../"><img src="./images/pidoorman.png" alt="PiDoorMan" title="PiDoorMan" height="100px" /></a></td>
 </tr>
 <tr>
 <td width="78"><b>Username</b></td>
