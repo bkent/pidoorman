@@ -5,7 +5,7 @@
 <meta name="HandheldFriendly" content="true" />
 <meta name="MobileOptimized" content="320" />
 <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scaleable=no, width=device-width" />
-<link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
 <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
 <link rel="stylesheet" href="./css/pidoorman.css">
 <script type="text/javascript" src="./jquery/jquery.min.js"></script>
